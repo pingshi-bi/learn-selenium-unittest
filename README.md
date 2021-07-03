@@ -19,6 +19,7 @@ python manage.py migrate
 再次启动项目 没有报警告
 
   打开浏览器 输入网址 http://localhost:8001/login/ 能够看到登陆页面，并且验证码能显示，就对了
+  
 
 6 给系统添加一个默认的用户 名字 admin 密码 123456
 http://localhost:8001/addUser/
@@ -31,7 +32,7 @@ http://localhost:8001/addUser/
 
 大功告成！
 
-第二部分：
-
+第二部分就是selenium和unittest部分的测试案例
+项目实战
 
 
