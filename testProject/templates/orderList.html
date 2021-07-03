@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>需求管理</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <script type="text/javascript" src="/static/layui/layui.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/orderList.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body class="layui-layout-body">
+    <form class="layui-form" lay-filter="orderList" id="listform">
+        <div class="layui-form-item">
+          <label class="layui-form-label">需求名称</label>
+          <div class="layui-input-inline">
+            <input type="text" name='order_name' class="layui-input" id="order_name" placeholder="请输入">
+          </div>
+
+          <label class="layui-form-label">需求部门</label>
+          <div class="layui-input-inline">
+            <select id="order_dep" lay-search="">
+              <option value="">全部</option>
+              <option value="001">人力部门</option>
+              <option value="002">保卫部</option>
+              <option value="003">综合办公室</option>
+              <option value="004">党群工作部</option>
+              <option value="005">科技部</option>
+              <option value="006">财务部</option>
+            </select>
+          </div>
+          <label class="layui-form-label">需求类型</label>
+          <div class="layui-input-inline">
+            <select id="order_type" lay-search="">
+              <option value="">全部</option>
+              <option value="new">新增需求</option>
+              <option value="change">需求变更</option>
+              <option value="upper">系统优化</option>
+            </select>
+          </div>
+          <label class="layui-form-label">需求日期</label>
+          <div class="layui-input-inline">
+            <input type="text" name='order_date' class="layui-input" id="order_date" placeholder="请选择">
+          </div>
+          <button class="layui-btn" data-type="reload" id="search"><i class="layui-icon layui-icon-search"></i></button>
+        </div>
+    </form>
+    <table class="layui-hide" id="orderList" lay-data="{id:'orderList'}" lay-filter="orderList"></table>
+
+    <script type="text/html" id="inlinebar">
+        <a class="layui-btn layui-btn-xs" lay-event="look" title="详情"><i class="layui-icon layui-icon-search"></i></a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit" title="审批"><i class="layui-icon layui-icon-ok"></i></a>
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>需求详情</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <script type="text/javascript" src="/static/layui/layui.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/orderInfo.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body class="layui-layout-body" style="padding:5px 15px;">
+  <fieldset class="layui-elem-field">
+    <legend>需求详情</legend>
+    <div class="layui-field-box">
+      <div class="layui-form-item">
+        <label class="layui-form-label">需求ID</label>
+        <div class="layui-form-mid layui-word-aux" style="width:80px;">{{order.id}}</div>
+        <label class="layui-form-label">需求名称</label>
+        <div class="layui-form-mid layui-word-aux" style="width:250px;">{{order.name}}</div>
+        <label class="layui-form-label">需求部门</label>
+        <div class="layui-form-mid layui-word-aux">{{order.dep}}</div>
+
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-form-mid layui-word-aux" style="width:80px;">{{order.status}}</div>
+        <label class="layui-form-label">需求类型</label>
+        <div class="layui-form-mid layui-word-aux" style="width:250px;">{{order.type}}</div>
+        <label class="layui-form-label">需求日期</label>
+        <div class="layui-form-mid layui-word-aux">{{order.date}}</div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">需求描述</label>
+        <div class="layui-form-mid layui-word-aux">{{order.desc}}</div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="layui-form-item">
+    <div class="layui-input-block" style="margin-left:0;text-align:center;">
+      <button id="okBtn" type="button" class="layui-btn" lay-submit="" >
+        <i class="layui-icon layui-icon-ok"></i>确定
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

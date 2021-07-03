@@ -1,0 +1,29 @@
+django-admin startproject {{PROJECTNAME}}
+django-admin startapp {{APPNAME}}
+
+
+--服务器启动--
+python manage.py runserver 0.0.0.0:80
+
+--构建基础表--
+python manage.py migrate
+--更新模块表结构--
+python manage.py makemigrations manager
+python manage.py migrate manager
+
+python manage.py inspectdb > dbscript.py
+
+========nginx==========
+# 启动命令
+start nginx
+# 重启命令
+nginx -s reload
+# 快速停止
+nginx -s stop
+# 完整有序的关闭
+nginx -s quit
+
+# 查看进程任务是否存在
+tasklist /fi "imagename eq nginx.exe"
+# 检查配置文件是否正常
+nginx -t -c /nginx-1.15.2/conf/nginx.conf

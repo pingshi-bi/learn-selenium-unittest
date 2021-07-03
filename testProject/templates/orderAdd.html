@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>需求登记</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <script type="text/javascript" src="/static/layui/layui.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/orderAdd.js"></script>
+</head>
+<body class="layui-layout-body">
+  <form id="addForm" class="layui-form" action="" lay-filter="orderAdd">
+    <br/>
+    <div class="layui-form-item">
+      <label class="layui-form-label"><span style="color:red;">*</span> 需求部门</label>
+      <div class="layui-input-inline">
+        <select name="order_dep" lay-verify="required" lay-reqtext="选择部门" lay-search="">
+          <option value="">直接选择或搜索选择</option>
+          <option value="001">人力部门</option>
+          <option value="002">保卫部</option>
+          <option value="003">综合办公室</option>
+          <option value="004">党群工作部</option>
+          <option value="005">科技部</option>
+          <option value="006">财务部</option>
+        </select>
+      </div>
+      <div class="layui-form-mid layui-word-aux">请选择需求部门</div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label"><span style="color:red;">*</span> 申请日期</label>
+      <div class="layui-input-inline">
+        <input type="text" name='order_date' class="layui-input" lay-verify="required" lay-reqtext="申请日期必输" id="order_date" placeholder="请输入">
+      </div>
+      <div class="layui-form-mid layui-word-aux">请选择申请日期</div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label"><span style="color:red;">*</span> 需求名称</label>
+      <div class="layui-input-inline">
+        <input type="text" name='order_name' class="layui-input" lay-verify="required" lay-reqtext="需求名称必输" id="order_name" placeholder="请输入">
+      </div>
+      <div class="layui-form-mid layui-word-aux">请输入需求名称</div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label">关联系统</label>
+      <div class="layui-input-inline">
+        <input type="text" name='order_sys' class="layui-input" id="order_sys" placeholder="请输入">
+      </div>
+      <div class="layui-form-mid layui-word-aux">请输入关联系统</div>
+    </div>
+    <div class="layui-form-item">
+      <label class="layui-form-label"><span style="color:red;">*</span> 需求类型</label>
+      <div class="layui-input-block">
+        <input type="radio" name="order_type" value="new" title="新增需求" checked="">
+        <input type="radio" name="order_type" value="change" title="需求变更">
+        <input type="radio" name="order_type" value="upper" title="系统优化">
+      </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+      <label class="layui-form-label"><span style="color:red;">*</span> 需求描述</label>
+      <div class="layui-input-inline">
+        <textarea cols=50 placeholder="请输入内容" class="layui-textarea" lay-verify="required" lay-reqtext="请填写需求描述" name="order_desc" id="order_desc"></textarea>
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-input-block">
+        <button id="submitBtn" type="submit" class="layui-btn" lay-submit="" lay-filter="orderAdd">
+          <i class="layui-icon layui-icon-ok"></i>提交
+        </button>
+        <button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon layui-icon-refresh"></i>重置</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

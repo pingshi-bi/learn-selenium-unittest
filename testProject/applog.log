@@ -1,0 +1,121 @@
+2021-06-28 09:16:38|   ERROR|log.py[:224]|Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\86180\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\86180\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 40, in login
+    raise SystemError("method error: post")
+SystemError: method error: post
+2021-06-28 09:17:17|   ERROR|testAction.py[:73]|用户名和密码必输.
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 51, in dologin
+    raise ValueError("用户名和密码必输.")
+ValueError: 用户名和密码必输.
+2021-06-28 09:17:17|    INFO|testAction.py[:78]|response json: {'code': 10, 'msg': '用户名和密码必输.'}
+2021-06-28 09:19:24|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:19:24|   DEBUG|testAction.py[:58]|sdd
+2021-06-28 09:19:24|   ERROR|testAction.py[:73]|用户名或密码错误
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 67, in dologin
+    raise RuntimeError("用户名或密码错误")
+RuntimeError: 用户名或密码错误
+2021-06-28 09:19:24|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
+2021-06-28 09:19:30|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:19:30|   DEBUG|testAction.py[:58]|sdd
+2021-06-28 09:19:30|   ERROR|testAction.py[:73]|用户名或密码错误
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 67, in dologin
+    raise RuntimeError("用户名或密码错误")
+RuntimeError: 用户名或密码错误
+2021-06-28 09:19:30|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
+2021-06-28 09:20:42|   ERROR|testAction.py[:73]|用户名和密码必输.
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 51, in dologin
+    raise ValueError("用户名和密码必输.")
+ValueError: 用户名和密码必输.
+2021-06-28 09:20:42|    INFO|testAction.py[:78]|response json: {'code': 10, 'msg': '用户名和密码必输.'}
+2021-06-28 09:21:11|   ERROR|testAction.py[:73]|用户名和密码必输.
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 51, in dologin
+    raise ValueError("用户名和密码必输.")
+ValueError: 用户名和密码必输.
+2021-06-28 09:21:11|    INFO|testAction.py[:78]|response json: {'code': 10, 'msg': '用户名和密码必输.'}
+2021-06-28 09:24:01|   ERROR|testAction.py[:73]|用户名和密码必输.
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 51, in dologin
+    raise ValueError("用户名和密码必输.")
+ValueError: 用户名和密码必输.
+2021-06-28 09:24:01|    INFO|testAction.py[:78]|response json: {'code': 10, 'msg': '用户名和密码必输.'}
+2021-06-28 09:24:39|   ERROR|testAction.py[:73]|用户名和密码必输.
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 51, in dologin
+    raise ValueError("用户名和密码必输.")
+ValueError: 用户名和密码必输.
+2021-06-28 09:24:39|    INFO|testAction.py[:78]|response json: {'code': 10, 'msg': '用户名和密码必输.'}
+2021-06-28 09:26:00|   ERROR|testAction.py[:73]|'captcha_str'
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 54, in dologin
+    print(request.session['captcha_str'])
+  File "C:\Users\86180\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'captcha_str'
+2021-06-28 09:26:00|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': "'captcha_str'"}
+2021-06-28 09:26:48|   ERROR|testAction.py[:73]|'captcha_str'
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 54, in dologin
+    print(request.session['captcha_str'])
+  File "C:\Users\86180\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'captcha_str'
+2021-06-28 09:26:48|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': "'captcha_str'"}
+2021-06-28 09:27:36|   ERROR|testAction.py[:73]|'captcha_str'
+Traceback (most recent call last):
+  File "C:\Users\86180\Desktop\测试\testProject\testProject\testAction.py", line 54, in dologin
+    print(request.session['captcha_str'])
+  File "C:\Users\86180\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'captcha_str'
+2021-06-28 09:27:36|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': "'captcha_str'"}
+2021-06-28 09:28:02|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:28:02|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:28:02|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 09:28:02|    INFO|testAction.py[:105]|载入主页面...
+2021-06-28 09:29:33|   DEBUG|proactor_events.py[:623]|Using proactor: IocpProactor
+2021-06-28 09:29:33|   DEBUG|proactor_events.py[:623]|Using proactor: IocpProactor
+2021-06-28 09:29:59|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:29:59|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:29:59|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 09:31:44|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:31:44|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:31:44|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 09:34:39|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:34:39|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:34:40|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 09:34:40|    INFO|testAction.py[:105]|载入主页面...
+2021-06-28 09:41:23|    INFO|testAction.py[:105]|载入主页面...
+2021-06-28 09:42:57|    INFO|testAction.py[:105]|载入主页面...
+2021-06-28 09:47:46|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:47:46|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:47:47|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 09:52:51|   DEBUG|testAction.py[:57]|admin
+2021-06-28 09:52:51|   DEBUG|testAction.py[:58]|123456
+2021-06-28 09:52:51|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:18:41|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:18:41|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:18:42|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:20:48|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:20:48|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:20:49|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:24:45|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:24:45|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:24:45|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:25:49|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:25:49|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:25:49|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:28:00|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:28:00|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:28:00|    INFO|testAction.py[:78]|response json: {'code': 0}
+2021-06-28 10:34:32|   DEBUG|testAction.py[:57]|admin
+2021-06-28 10:34:32|   DEBUG|testAction.py[:58]|123456
+2021-06-28 10:34:32|    INFO|testAction.py[:78]|response json: {'code': 0}

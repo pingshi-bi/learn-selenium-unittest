@@ -1,0 +1,13 @@
+1. Chrome 版本 91.0.4472.106
+2. 浏览器内核版本下载
+3.存放在c盘的webdriver
+4.基本框架：
+from selenium import webdriver
+import  time        #引入时间降低测试速度
+
+driver_path = r"C:\SeleniumChrome\chromedriver.exe"
+driver = webdriver.Chrome(executable_path = driver_path)
+driver.get("http://localhost:8001/login/ ")
+driver.implicitly_wait(30)
+5. 也可以将webdriver放置再python文档下直接使用缺省参数。
+

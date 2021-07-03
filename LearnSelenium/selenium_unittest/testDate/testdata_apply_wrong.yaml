@@ -1,0 +1,88 @@
+-
+  case_desc: "需求名称为空"
+  dept: "人力部门"
+  date: "<datetime.date.today().strftime('%Y-%m-%d')>"
+  name: ""
+  refersys: "关联的应用系统"
+  decs: "需求描述的具体内容"
+  type: "需求变更"
+-
+  case_desc: "需求名称为空格字符串"
+  dept: "人力部门"
+  date: '2021-06-28'
+  name: "   "
+  refersys: "关联的应用系统"
+  decs: "需求描述的具体内容"
+  type: "需求变更"
+-
+  case_desc: "第n天日期"
+  dept: "人力部门"
+  date: '2021-07-01'
+  name: "测试需求名称"
+  refersys: "关联的应用系统"
+  decs: "需求描述的具体内容"
+  type: "需求变更"
+#-
+#  case_desc: "不同部门"
+#  dept: "人力部门"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "不同部门"
+#  dept: "保卫部"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "不同部门"
+#  dept: "科技部"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "不同部门"
+#  dept: "财务部"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "第n天日期"
+#  dept: "综合办公室"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "第n天日期"
+#  dept: "党群工作部"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "不同的需求类型"
+#  dept: "人力部门"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "需求变更"
+#-
+#  case_desc: "不同的需求类型"
+#  dept: "人力部门"
+#  date: '2021-07-01'
+#  name: "测试需求名称"
+#  refersys: "关联的应用系统"
+#  decs: "需求描述的具体内容"
+#  type: "系统优化"
